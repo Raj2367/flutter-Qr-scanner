@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "60296157995",
+    "firebase_url": "https://qrscanner-8dd7b.firebaseio.com",
+    "project_id": "qrscanner-8dd7b",
+    "storage_bucket": "qrscanner-8dd7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60296157995:android:3c13da031ed9f97034036e",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app_qr_scanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60296157995-oav9e9pe5vs8d30jnfoojp0aqmaqlkel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBbi4bsZVOby5na_Rz6iiOsPxZIIXxZNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60296157995-oav9e9pe5vs8d30jnfoojp0aqmaqlkel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
