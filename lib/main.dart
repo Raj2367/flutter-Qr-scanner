@@ -14,10 +14,10 @@ class _MyAppState extends State<MyApp> {
   GlobalKey qrKey = GlobalKey();
   var qrText = "";
   QRViewController controller;
+  final databaseReference = Firestore.instance;
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       body: Column(
         children: <Widget>[
@@ -50,13 +50,20 @@ class _MyAppState extends State<MyApp> {
     controller?.dispose();
     super.dispose();
   }
-
+  void createRecord() async {
+    DocumentReference ref = await databaseReference.collection("patients")
+      .add({
+        'qrText': qrText
+      });
+      print(ref.documentID);
+  }
   void _onQRViewCreate(QRViewController controller) {
     this.controller = controller;
     controller.scannedDataStream.listen((scanData) {
       setState(() {
         qrText = scanData;
       });
+      createRecord();
     });
   }
 }
