@@ -53,9 +53,7 @@ class _MyAppState extends State<MyApp> {
   void createRecord() async {
     FirebaseDatabase.instance
         .reference()
-        .child('qrscanner-8dd7b')
-        .child('')
-        .set({'qrtext':qrText});
+        .update({'value':qrText});
   }
 
   void _onQRViewCreate(QRViewController controller) {
